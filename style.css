@@ -1,0 +1,41 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: white; min-height: 100vh; padding: 30px;
+}
+.container { max-width: 700px; margin: 0 auto; }
+h1 { text-align: center; margin-bottom: 25px; font-size: 1.8em; }
+.search-box {
+    display: flex; margin-bottom: 25px;
+}
+.search-box input {
+    flex: 1; padding: 14px; border: none; border-radius: 8px 0 0 8px;
+    font-size: 1em; outline: none;
+}
+.search-box button {
+    padding: 14px 24px; background: #e74c3c; color: white;
+    border: none; border-radius: 0 8px 8px 0; cursor: pointer; font-size: 1em;
+}
+.weather-card {
+    background: rgba(255,255,255,0.1); border-radius: 12px;
+    padding: 30px; text-align: center; backdrop-filter: blur(5px);
+}
+.temp { font-size: 4em; font-weight: bold; }
+.city { font-size: 1.5em; margin-bottom: 10px; }
+.details { display: flex; justify-content: center; gap: 30px; margin-top: 20px; color: #ccc; }
+.error { text-align: center; color: #e74c3c; margin-top: 20px; display: none; }
+.favorites { margin-top: 25px; }
+.favorites h3 { margin-bottom: 10px; font-size: 1em; color: #aaa; }
+.fav-list { display: flex; gap: 10px; flex-wrap: wrap; }
+.fav-btn {
+    padding: 6px 14px; background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.2); border-radius: 20px;
+    color: white; cursor: pointer; font-size: 0.85em;
+}
+.fav-btn:hover { background: rgba(255,255,255,0.25); }
+.icon { font-size: 3em; }
+@media (max-width: 500px) {
+    .temp { font-size: 3em; }
+    .details { flex-direction: column; gap: 10px; }
+}
