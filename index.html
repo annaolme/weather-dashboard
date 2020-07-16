@@ -1,5 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><title>Weather</title></head>
-<body><h1>Weather Dashboard</h1></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button onclick="searchWeather()">Search</button>
+        </div>
+        <div class="error" id="error">City not found. Try again.</div>
+        <div class="weather-card" id="weather-card" style="display:none;">
+            <div class="city" id="city-name"></div>
+            <div class="icon" id="weather-icon"></div>
+            <div class="temp" id="temperature"></div>
+            <div id="description"></div>
+            <div class="details">
+                <span>Humidity: <strong id="humidity"></strong></span>
+                <span>Wind: <strong id="wind"></strong></span>
+            </div>
+            <button class="fav-btn" onclick="addFavorite()" style="margin-top:15px;">★ Save</button>
+        </div>
+        <div class="favorites">
+            <h3>Saved Cities</h3>
+            <div class="fav-list" id="fav-list"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
 </html>
