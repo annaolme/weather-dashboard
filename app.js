@@ -1,4 +1,4 @@
-var API_KEY = 'demo';
+var API_KEY = 'YOUR_API_KEY_HERE';
 var favorites = JSON.parse(localStorage.getItem('weatherFavs') || '[]');
 
 function searchWeather() {
