@@ -15,3 +15,5 @@ Search for weather by city name using the OpenWeatherMap API.
 1. Get a free API key from [OpenWeatherMap](https://openweathermap.org/api)
 2. Replace `YOUR_API_KEY_HERE` in `app.js`
 3. Open `index.html`
+
+> You need your own OpenWeatherMap API key to run this.
